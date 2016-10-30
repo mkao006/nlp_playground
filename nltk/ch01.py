@@ -144,10 +144,8 @@ sorted([word for word in set(text5) if len(word) > 7 and fdist5[word] > 7])
 # 3.3 Collocation and Bigram
 
 # Bigrams are two words that occur together.
-#
-# NOTE (Michael): Somehow the bigrams function can not be found.
-
-# list(bigrams(['more', 'is', 'said', 'than', 'done']))
+from nltk.util import bigrams
+list(bigrams(['more', 'is', 'said', 'than', 'done']))
 
 # Collacations are bigrams which occur frequently.
 text4.collocations()
