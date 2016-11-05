@@ -1,5 +1,15 @@
-from nltk.corpus import reuters
+# NOTE(Michael): As the Reuters corpus does not contain date, and thus
+#                we can not correlate it to wheat price.
+#
+#                To move forward, we would have to build a topic
+#                classification on the Reuters corpus then use the
+#                model tag the unlabelled data from 'The Reading
+#                Machine'.
+#
+#                Then we can proceed with the price prediction.
+
 import httplib2
+from nltk.corpus import reuters
 from googleapiclient import discovery
 from oauth2client.client import GoogleCredentials
 
